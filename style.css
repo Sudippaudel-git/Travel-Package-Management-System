@@ -1,0 +1,253 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #3498db !important;
+}
+
+.navbar-nav .nav-link {
+    color: #34495e;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3498db;
+}
+
+/* Hero Carousel Styles */
+#heroCarousel {
+    margin-top: -56px; /* Adjust based on your navbar height */
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+}
+
+.carousel-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+}
+
+.carousel-caption {
+    bottom: 20%;
+    z-index: 10;
+}
+
+.carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Search Form Styles */
+.search-form {
+    margin-top: -50px;
+    position: relative;
+    z-index: 20;
+}
+
+.search-form .input-group {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.search-form .form-control {
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+}
+
+.search-form .btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+
+/* Category Styles
+.col-md-3 {
+    padding: 20px;
+    background: linear-gradient(135deg, #f6f8fa, #e9ecef);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.col-md-3 h3 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.list-group {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px 20px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.list-group-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.list-group-item:hover::before,
+.list-group-item.active::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.list-group-item a {
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.list-group-item:hover a {
+    color: #fff !important;
+}
+
+.list-group-item.active a {
+    color: #fff !important;
+}
+
+.list-group-item:not(:last-child) {
+    border-bottom: 1px solid rgba(52, 152, 219, 0.1);
+}
+
+.list-group-item::after {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: #fff;
+}
+
+.list-group-item:hover::after,
+.list-group-item.active::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(5px);
+}
+
+/* Ensure text is visible on hover for non-active items */
+.list-group-item:hover a.text-dark {
+    color: #fff !important;
+} */
+
+/* Package Card Styles */
+.package-card {
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.package-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-card .card-body {
+    padding: 1.5rem;
+}
+
+.package-card .card-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.package-card .btn {
+    background-color: #3498db;
+    border-color: #3498db;
+    transition: all 0.3s ease;
+}
+
+.package-card .btn:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Pagination Styles */
+.pagination .page-link {
+    color: #3498db;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 2rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+
+    .search-form {
+        margin-top: -30px;
+    }
+}
